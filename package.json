@@ -1,0 +1,30 @@
+{
+    "name": "bobscript",
+    "displayName": "BobScript",
+    "description": "Syntax highlighting for BobScript, a language designed for use with the Discord bot Bob Bot.",
+    "icon": "images/icon.png",
+    "author": "faceboy#1392",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.64.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "repository": {
+        
+    },
+    "contributes": {
+        "languages": [{
+            "id": "bobscript",
+            "aliases": ["BobScript", "bobscript"],
+            "extensions": [".bob",".bobscript"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "bobscript",
+            "scopeName": "source.bob",
+            "path": "./syntaxes/bobscript.tmLanguage.json"
+        }]
+    }
+}
